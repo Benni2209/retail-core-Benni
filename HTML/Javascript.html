@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body style="font-family: Vemana2000, sans-serif;">
+<ul style="list-style-type: none; overflow: hidden; background-color: black; margin-left: 0%; padding-top:25px; padding-bottom: 0px;">
+    <li class="li" style="display: block; float: left; margin-right:27px; font-size:20px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png" width="40px;">
+    </li>
+    <li class="li" style="display: block; float: left; margin-right:27px; font-size:20px;">
+        <a href="Git.html" style="color:white; text-decoration: none;">Git</a>
+    </li>
+    <li style="display: block; float: left; margin-right:27px; ">
+        <a href="Git.html" style="color:white; text-decoration: none; font-size:20px; ">HTML</a>
+    </li>
+    <li style="display: block; float: left; margin-right:27px; font-size:20px;">
+        <a href="Git.html" style="color:white; text-decoration: none;">Javascript</a>
+    </li>
+    <li style="display: block; float: left; margin-right:27px; font-size:20px;">
+        <a href="Git.html" style="color:white; text-decoration: none;">Dunno what</a>
+    </li>
+</ul>
+<div style="margin-left: 50px">
+<h2 > Javascript</h2>
+
+<p>
+    Javascript wurde 1995 von Netscape entwickelt und war dafür gedacht um dynamischeres HTML produzieren zu können.<br> Obwohl es dabei Namensgleich mit Java ist, hat es dennoch nicht sehr viel damit gemeinsam und unterscheidet sich sogar grundlegend von diesem.
+<blockquote style="margin-left: 150px;">"Um die Popularität von Java zu nutzen, wurde LiveScript in JavaScript umbenannt, obwohl die beiden Sprachen voneinander unabhängig entwickelt wurden und völlig unterschiedliche Grundkonzepte aufweisen."</blockquote></p>
+<p>Javascript hat dabei keinen Compiler und funktioniert über einen im Browser integrierten Interpreter. Den Sprachkern, der übersetzten Syntax macht dabei ECMAScript aus.<br>
+    Die Funktionen von Javascript sind dabei sehr umfangreich. Es erlaubt vor allem das Ausführen von Gleichung, besitzt unterschiedliche Datentypen(Strings, Integers, Variablen usw) und kann z.B. auch Content von anderen Websites "fetchen". Dabei kann es sowohl in eine funktionale als auch objektorientierte Richtung programmiert werden.
+</p>
+
+<img src="https://cdn-media-1.freecodecamp.org/images/bu47j9z9Dee3O3hHm51ijuARr3aUTtj4j4EH" width="350px">
+
+    <p>Jit konvertiert Javascript code während während es ausgeführt wird.</p>
+<h2> Fingerprinting mit JS</h2>
+<p>
+    Javascript kann auch dafür genutzt werden um über den HTTP Header informationen wie Browser Einstellungen, Betriebssystem, allg. Systeminformationen und mehr abgefragt und an den Server geschickt werden. <br>
+    Diese Informationen können erneut abgefragt und dazu genutzt werden um individuelle Nutzer im Internet zu deanonymisieren. Auch ohne Cookies.
+</p>
+
+<img src="https://lcdn.gologin.com/img/canvasFp/2.webp" width="400px" >
+</div>
+<div style="margin-left: 50px">
+<h2> Integration in HTML und DOM</h2>
+<p>
+Ähnlich wie CSS kann Javascript auch in HTML integriert genutzt werden. Für kleinere Anwendungen reicht es aus das &lt;script&gt; Element zu nutzen. Dazu kommen dann noch die DOM Elemente welche es leicht ermöglichen, Elemente dynamiken zu verleihen. <br>
+Es können mit "document.GetElementById()" z.B. Elemente aufgegriffen und verändert werden. 
+</p>
+<div id="demo">
+    Hover um größe zu ändern
+</div>
+    <img src="https://www.w3schools.com/js/pic_htmltree.gif" width="350px">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DHjqpvDnNGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+
+
+<script>
+    document.getElementById('demo').onmouseover = function () {
+        document.getElementById('demo').style.fontSize = "50px";
+
+
+    }
+    document.getElementById('demo').onmouseout = function () {
+        document.getElementById('demo').style.fontSize = "20px";
+
+
+    }
+</script>
