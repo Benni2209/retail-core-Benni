@@ -2,52 +2,67 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="stylesheet.css">
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 
 <body style="font-family: Vemana2000, sans-serif;">
-<ul style="list-style-type: none; overflow: hidden; background-color: black; margin-left: 0%; padding-top:25px; padding-bottom: 0px;">
-    <li class="li" style="display: block; float: left; margin-right:27px; font-size:20px;">
-        <img alt="HTML5 Logo" src="https://logospng.org/wp-content/uploads/html-5.png" width="70px;">
+<header>
+    <ul class="header">
+        <li style="float:left; display:block;">
+            <img alt="mobilcomlogo" src="oie_ltOD52sDIw1G.jpg" width="200px">
+        </li>
+    </ul>
+
+
+</header>
+
+<ul class="nav">
+    <li class="navbar">
+        <a href="Index.html" class="link" >Home</a>
     </li>
-    <li class="li" style="display: block; float: left; margin-right:27px; font-size:20px;">
-        <a href="Git.html" style="color:white; text-decoration: none;">Git</a>
+    <li class="navbar">
+        <a href="Git.html" class="link" >Git</a>
     </li>
-    <li style="display: block; float: left; margin-right:27px; ">
-        <a href="HTML.html" style="color:white; text-decoration: none; font-size:20px; ">HTML</a>
+    <li class="navbar">
+        <a href="HTML.html" class="link" >HTML</a>
     </li>
-    <li style="display: block; float: left; margin-right:27px; font-size:20px;">
-        <a href="Javascript.html" style="color:white; text-decoration: none;">Javascript</a>
+    <li class="navbar">
+        <a href="Javascript.html" class="link" >Javascript</a>
     </li>
-    <li style="display: block; float: left; margin-right:27px; font-size:20px;">
-        <a href="Ghibli.html" style="color:white; text-decoration: none;">Studio Ghibli</a>
+    <li class="navbar">
+        <a href="Ghibli.html" class="link" >Ghibli</a>
+    </li>
+    <li id="logo"class="navbar">
+        <img alt="HTML" src="https://logospng.org/wp-content/uploads/html-5.png" width="50px">
     </li>
 </ul>
+
 <p> HTML steht fur Hypertext Markup Language und ist die Grundlage vom der Webbasierten Textverarbeitung.<br>
     Sie wurde in CERN entwickelt und kann dabei von so gut wie jedem modernen Browser übersetzt werden.<br> Es basiert auf vielen verschiedenen Elementen die genutzt werden um den Inhalt zu umschließen und diesen damit unterschiedliche Eigenschaften in ihrer Anordnung zu geben. </p>
 
 <img alt="Tags" src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics/grumpy-cat-small.png" width="250px">
 
-<table style="margin-left:100px;">
+<table class="fctable">
 
     <tr>
         <th>Code</th>
         <th>Output</th>
 </tr>
-<tr>
-    <td style="padding-left:50px;">
+<tr class="tableg">
+    <td >
         <pre>&lt;li&gt;
 </pre>
     </td>
-    <td style="padding-left:100px;">
+    <td >
         <li>erstellt</li>
         <li>punktierte</li>
         <li>Liste</li>
     </td>
 </tr>
     <tr>
-        <td style="padding-left:50px;">
+        <td>
         <pre>&lt;ul&gt;
 </pre>
         </td>
@@ -59,31 +74,31 @@
         </td>
     </tr>
 
-    <tr>
-        <td style="padding-left:50px;">
+    <tr class="tableg">
+        <td>
         <pre>&lt;div&gt;
 </pre>
         </td>
-        <td style="padding-left:100px;">
+        <td>
             <div>Ein Container für Daten</div>
         </td>
     </tr>
     <tr>
-        <td style="padding-left:50px;">
+        <td>
         <pre>&lt;p&gt;
 </pre>
         </td>
-        <td style="padding-left:100px;">
+        <td>
             <p>Gibt einen neuen Paragrafen an </p>
         </td>
     </tr>
 
-    <tr>
-        <td style="padding-left:50px;">
+    <tr class="tableg">
+        <td>
         <pre>&lt;img&gt;
 </pre>
         </td>
-        <td style="padding-left:100px;">
+        <td>
             <img alt="Screenshot" src="Screenshot from 2022-08-11 11-47-12.png">
         </td>
     </tr>
@@ -104,6 +119,19 @@
 <p> Ohne CSS Ordnen sich die unterschiedlichen Elemente so an</p>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ok-plXXHlWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<footer>
+    <ul class="nav" id="f1">
+        <li class="footeritemleft">
+            <a href="Git.html" class="link"> Impressum</a>
+        </li>
+        <li class="footeritemright">
+            <a href="Git.html" class="link" > Version</a>
+        </li>
+    </ul>
+</footer>
+
 
 </body>
 </html>
