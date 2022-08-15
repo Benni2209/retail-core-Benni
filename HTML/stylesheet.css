@@ -1,0 +1,181 @@
+.header{
+    list-style-type: none;
+    background-color:#83b224;
+    overflow:hidden;
+    padding-bottom:0px;
+    margin-bottom: 0px;
+    height:90px;
+
+}
+
+.nav{
+    padding
+    list-style-type: none;
+    background-color:#21304d;
+    overflow:hidden;
+    padding-bottom:0px;
+    height:50px;
+    margin-top: 0px;
+    font-family: Vemana2000, sans-serif;
+
+}
+
+.navbar{
+    padding-top: 12px;
+    float:left;
+    
+    margin-left:0px;
+    font-size:20px;
+    margin-right:40px;
+
+    display:block;
+    padding-bottom:0px;
+}
+
+.link{
+    color:white;
+    text-decoration: none;
+}
+
+.link:hover{
+    color:#83b224;
+}
+
+footer{
+    background-color:#21304d;
+    padding-bottom:0px;
+    height:10px;
+}
+
+.footeritemleft{
+
+    padding-top: 40px;
+    float:left;
+
+    margin-left:0px;
+    font-size:15px;
+    padding-left:80px;
+
+    display:block;
+    padding-bottom:0px;
+
+
+}
+
+.welcome {
+    font-size: 100px;
+    font-family: “Comic Sans MS”, “Comic Sans”, cursive;
+}
+.footeritemright{
+    float:right;
+    padding-top: 40px;
+    margin-left:0px;
+    font-size:15px;
+    padding-right:180px;
+
+    display:block;
+    padding-bottom:0px;
+
+
+}
+#f1{
+    height:100px;
+
+}
+
+#logo{
+    float:right;
+}
+
+.centered{
+    margin-right:auto;
+    margin-left:auto;
+    display:block;
+    width:20%;
+
+}
+
+.right{
+    padding-left:500px;
+    float:right;
+}
+
+.tableg{
+    background-color:#83b224;
+    padding-left:10px;
+}
+
+.fctable{
+    color:#94700d;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+.UnorderedList{
+    list-style-type: square;
+    color:black;
+}
+
+.imgEdit{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    border-radius:30%;
+
+}
+.border{
+    border-style: solid;
+}
+
+.background{
+    background-color:grey;
+
+}
+
+Body{
+    font-family: Vemana2000, sans-serif;
+    margin:0px;
+}
+
+.headerLi{
+    float:left;
+    display:block;
+}
+.movieList{
+    list-style-type: none;
+    overflow: hidden;
+    margin-left: 0%;
+    padding-top:25px;
+    padding-bottom: 0px;
+}
+.movieListLi{
+    display:block;
+    float:left;
+    margin-left:27px;
+}
+.h2ghibli{
+    margin-left:50px;
+}
+.divghibli{
+    margin-left:400px;
+}
+.divghibli2{
+    width:1000px;
+}
+.tdClass{
+    padding-left:100px;
+}
+.welcome{
+    height:800px;
+}
+.tdgrey{
+    background-color:#dddddd;
+    padding-left:10px
+}
+.trrowborder{
+    border-style:solid;
+    padding:8px
+
+}
+#JSMargin{
+    margin-left:150px;
+}
