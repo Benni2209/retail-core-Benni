@@ -1,4 +1,4 @@
-.header{
+.Header{
     list-style-type: none;
     background-color:#83b224;
     overflow:hidden;
@@ -8,8 +8,7 @@
 
 }
 
-.nav{
-    padding
+.Nav{
     list-style-type: none;
     background-color:#21304d;
     overflow:hidden;
@@ -20,7 +19,7 @@
 
 }
 
-.navbar{
+.NavBar{
     padding-top: 12px;
     float:left;
     
@@ -32,12 +31,12 @@
     padding-bottom:0px;
 }
 
-.link{
+.Link{
     color:white;
     text-decoration: none;
 }
 
-.link:hover{
+.Link:hover{
     color:#83b224;
 }
 
@@ -47,7 +46,7 @@ footer{
     height:10px;
 }
 
-.footeritemleft{
+.FooterItemLeft{
 
     padding-top: 40px;
     float:left;
@@ -62,11 +61,11 @@ footer{
 
 }
 
-.welcome {
+.Welcome {
     font-size: 100px;
     font-family: “Comic Sans MS”, “Comic Sans”, cursive;
 }
-.footeritemright{
+.FooterItemRight{
     float:right;
     padding-top: 40px;
     margin-left:0px;
@@ -78,16 +77,16 @@ footer{
 
 
 }
-#f1{
+#F1{
     height:100px;
 
 }
 
-#logo{
+#Logo{
     float:right;
 }
 
-.centered{
+.Centered{
     margin-right:auto;
     margin-left:auto;
     display:block;
@@ -95,17 +94,17 @@ footer{
 
 }
 
-.right{
+.Right{
     padding-left:500px;
     float:right;
 }
 
-.tableg{
+.TableGreen{
     background-color:#83b224;
     padding-left:10px;
 }
 
-.fctable{
+.TableColored{
     color:#94700d;
     margin-left:auto;
     margin-right:auto;
@@ -116,17 +115,17 @@ footer{
     color:black;
 }
 
-.imgEdit{
+.ImgEdit{
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     border-radius:30%;
 
 }
-.border{
+.Border{
     border-style: solid;
 }
 
-.background{
+.Background{
     background-color:grey;
 
 }
@@ -136,46 +135,46 @@ Body{
     margin:0px;
 }
 
-.headerLi{
+.HeaderLi{
     float:left;
     display:block;
 }
-.movieList{
+.MovieList{
     list-style-type: none;
     overflow: hidden;
     margin-left: 0%;
     padding-top:25px;
     padding-bottom: 0px;
 }
-.movieListLi{
+.MovieListLi{
     display:block;
     float:left;
     margin-left:27px;
 }
-.h2ghibli{
+.GhibliHeading{
     margin-left:50px;
 }
-.divghibli{
+.DivGhibli{
     margin-left:400px;
 }
-.divghibli2{
+.DivGhibli2{
     width:1000px;
 }
-.tdClass{
+.TdClass{
     padding-left:100px;
 }
-.welcome{
+.Welcome{
     height:800px;
 }
-.tdgrey{
+.TdGrey{
     background-color:#dddddd;
     padding-left:10px
 }
-.trrowborder{
+.TrRowBorder{
     border-style:solid;
     padding:8px
 
 }
-#JSMargin{
+#JMargin{
     margin-left:150px;
 }
