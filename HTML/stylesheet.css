@@ -1,4 +1,4 @@
-.Header {
+.LogoTop {
     list-style-type: none;
     background-color: #83b224;
     overflow: hidden;
@@ -46,7 +46,7 @@ footer {
     height: 10px;
 }
 
-.FooterItemLeft {
+.ItemLeft {
 
     padding-top: 40px;
     float: left;
@@ -66,7 +66,7 @@ footer {
     font-family: “Comic Sans MS”, “Comic Sans”, cursive;
 }
 
-.FooterItemRight {
+.ItemRight {
     float: right;
     padding-top: 40px;
     margin-left: 0px;
@@ -101,12 +101,12 @@ footer {
     float: right;
 }
 
-.TableGreen {
+.Green {
     background-color: #83b224;
     padding-left: 10px;
 }
 
-.TableColored {
+.Colored {
     color: #94700d;
     margin-left: auto;
     margin-right: auto;
@@ -118,7 +118,7 @@ footer {
     color: black;
 }
 
-.ImgEdit {
+.Edit {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     border-radius: 30%;
@@ -139,7 +139,7 @@ Body {
     margin: 0px;
 }
 
-.HeaderLi {
+.LogoList {
     float: left;
     display: block;
 }
@@ -152,7 +152,7 @@ Body {
     padding-bottom: 0px;
 }
 
-.MovieListLi {
+.MovieListItem {
     display: block;
     float: left;
     margin-left: 27px;
@@ -162,15 +162,15 @@ Body {
     margin-left: 50px;
 }
 
-.DivGhibli {
+.GhibliText {
     margin-left: 400px;
 }
 
-.DivGhibli2 {
+.GhibliText2 {
     width: 1000px;
 }
 
-.TdClass {
+.ClassTable {
     padding-left: 100px;
 }
 
@@ -178,12 +178,12 @@ Body {
     height: 800px;
 }
 
-.TdGrey {
+.Grey {
     background-color: #dddddd;
     padding-left: 10px
 }
 
-.TrRowBorder {
+.RowBorder {
     border-style: solid;
     padding: 8px
 
