@@ -192,3 +192,31 @@ Body {
 #JMargin {
     margin-left: 150px;
 }
+
+.dropdown{
+    padding-left:10px;
+    position:relative;
+    display:inline-block;
+    margin-bottom:100px;
+    margin-left:50px;
+}
+
+.dropdownColor{
+    padding-top: 10px;
+    padding-left:10px;
+    display: none;
+    position:absolute;
+    min-width: 160px;
+    background-color:#21304d;
+}
+
+.dropdownColor div {
+    color:white;
+    display: block;
+}
+.show {display:block; padding-left:10px; padding-top:10px;}
+.hide {display:none;}
+.hiddenImg{
+    display:none;
+}
+.unhiddenImg {display:block;}
