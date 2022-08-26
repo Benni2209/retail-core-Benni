@@ -30,7 +30,7 @@ const AI = () => {
 
 let enemy = document.createTextNode('o');
     if (CrossesSet = true) {
-        let randomeStartEntry = Math.floor(Math.random() * 9);
+        let randomeStartEntry = Math.floor(Math.random() * 8);
         console.log(randomeStartEntry);
             if(randomeStartEntry === 0 && document.getElementById('1').childNodes.length === 0) {
                 document.getElementById('1').appendChild(enemy);
@@ -83,11 +83,18 @@ let enemy = document.createTextNode('o');
             ) {
                 document.getElementById('9').appendChild(enemy);
             }
+            else if(randomeStartEntry === 9 && document.getElementById('0').childNodes.length === 0 ||
+                document.getElementById('9').childNodes.length === 1 &&
+                document.getElementById('1').childNodes.length === 0
+            ) {
+                document.getElementById('1').appendChild(enemy);
+            }
 
             }
 
     }
-//checks if the player or the computer won
+
+    //checks if the player or the computer won
 const checkWinningConditionMet = (human, enemy) => {
     let enemyArray = [];
     let playerArray = [];
@@ -132,8 +139,13 @@ const conditionCheck = (array, player) => {
     ) {
         console.log(`${player} Wins`)
         gameWon = true;
-        return;
 
+
+        if (document.getElementById('winningMessage').hasChildNodes() === false){
+            let winningMessage = document.createTextNode(`${player} wins`)
+            document.getElementById('winningMessage').append(winningMessage);
+        }
+        return gameWon, player;
     } else if (gameWon === false) {
         Game();
     }
