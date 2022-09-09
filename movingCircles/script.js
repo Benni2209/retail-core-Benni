@@ -1,12 +1,16 @@
 'use strict'
 let x = window.innerWidth;
 let y = window.innerHeight;
-let angle;
-let idNum;
 document.querySelector('Body').style.backgroundColor = "cyan";
-//creates a new circle element
-const newElement = function (posX, posY, size, speed) {
-    idNum = posX;
+
+/**
+ * creates a new html div element, which is placed at a randome location by cssText
+ * @param posX explained below
+ * @param posY explained below
+ * @param size explained below
+ * @param speed explained below
+ */
+function newElement (posX, posY, size, speed) {
     const circleHTML = document.createElement("div");
     const content = document.createTextNode('');
     circleHTML.style.cssText = `background-color: rgb(${Math.trunc(Math.random()* 255 + 0)}, ${Math.trunc(Math.random()* 255 + 0)}, ${Math.trunc(Math.random()* 255 + 0) }); border-style: solid; border-radius: 900px; position: absolute; width: ${size}px; height:${size}px; margin-top:${posY}px; margin-left:${posX}px;`;
@@ -15,8 +19,16 @@ const newElement = function (posX, posY, size, speed) {
     randomeMovement(circleHTML,posX,posY, size, randomizer(-5, 2))
     hoverAndClickEvent(circleHTML, size);
 }
-//Controls randomized movement speed, keeps circles in boundary on resize most of the time
-const randomeMovement = function (element, posX, posY, size, speed) {
+
+/**
+ * Controls the movement of each circle via intervals set to a certain tickrate(i think)
+ * @param element is the html element created
+ * @param posX randome starting position on x axis
+ * @param posY same as above but on y axis, both are used to check whether the circles are still in window boundary and will bounce then back on the edge
+ * @param size makes sure the the bounceback happens exactly as the ball reaches the edge
+ * @param speed randome speed value which will be inverted as soon as the edge is reached
+ */
+function randomeMovement (element, posX, posY, size, speed) {
     let speedX = speed;
     let speedY = speed;
     setInterval(function () {
@@ -51,7 +63,7 @@ const randomeMovement = function (element, posX, posY, size, speed) {
     });
 }
 //Handles clicking and hovering
-const hoverAndClickEvent = function (element, size){
+function hoverAndClickEvent(element, size){
     element.addEventListener('mouseover', function() {
         element.style.width = `${size + 20}px`
         element.style.height = `${size + 20}px`
@@ -69,8 +81,14 @@ const hoverAndClickEvent = function (element, size){
         element.style.backgroundSize = `${size}px`
     })
 }
-//returns a randome number that isn't 0
-const randomizer  = function (max, min){
+//returns a randome number that isn't 0, has positive aswell as negative values to ensure that the circles move in every direction possible
+/**
+ *
+ * @param max highest random number possible
+ * @param min min random number possible
+ * @returns {number}
+ */
+function randomizer (max, min){
     let random = Math.trunc(Math.random()* max + min);
     if (random === 0){
         if (max < 0) {
@@ -84,9 +102,9 @@ const randomizer  = function (max, min){
         return random;
     }
 }
-//controls how many circles are going to be created
+//gives out a prompt which asks for num of elements that are created
 const objects = prompt('How many circles?');
-const createElements = function(numPrompt){
+function createElements (numPrompt){
     let elementArray = []
     for(let i = 0; i < numPrompt; i++) {
         elementArray[i] = newElement(randomizer(x - 400,1), randomizer(y - 400,1),randomizer(400,1), randomizer(5,1));
