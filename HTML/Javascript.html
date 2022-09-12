@@ -2,68 +2,101 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="stylesheet.css">
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body style="font-family: Vemana2000, sans-serif;">
-<ul style="list-style-type: none; overflow: hidden; background-color: black; margin-left: 0%; padding-top:25px; padding-bottom: 0px;">
-    <li class="li" style="display: block; float: left; margin-right:27px; font-size:20px;">
-        <img alt="JSLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png" width="40px;">
+
+
+<body class="Background">
+<header>
+    <ul class="LogoTop">
+        <li class="ListTop">
+            <img alt="mobilcomlogo" src="oie_ltOD52sDIw1G.jpg" width="200px">
+        </li>
+    </ul>
+
+
+</header>
+<ul class="Nav">
+    <li class="NavBar">
+        <a href="Git.html" class="Link" >Home</a>
     </li>
-    <li class="li" style="display: block; float: left; margin-right:27px; font-size:20px;">
-        <a href="Git.html" style="color:white; text-decoration: none;">Git</a>
+    <li class="NavBar">
+        <a href="Git.html" class="Link" >Git</a>
     </li>
-    <li style="display: block; float: left; margin-right:27px; ">
-        <a href="HTML.html" style="color:white; text-decoration: none; font-size:20px; ">HTML</a>
+    <li class="NavBar">
+        <a href="Git.html" class="Link" >HTML</a>
     </li>
-    <li style="display: block; float: left; margin-right:27px; font-size:20px;">
-        <a href="Javascript.html" style="color:white; text-decoration: none;">Javascript</a>
+    <li class="NavBar">
+        <a href="Git.html" class="Link" >Javascript</a>
     </li>
-    <li style="display: block; float: left; margin-right:27px; font-size:20px;">
-        <a href="Ghibli.html" style="color:white; text-decoration: none;">Studio Ghibli</a>
+    <li class="NavBar">
+        <a href="Git.html" class="Link" >Ghibli</a>
     </li>
+    <li id="Logo" class="NavBar"> <img class="ImgEdit" alt="JS Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png" width="40px"> </li>
 </ul>
-<div style="margin-left: 50px">
+
+<div class>
 <h2> Javascript</h2>
 
 
 
-<p>
+<p class="Border">
     Javascript wurde 1995 von Netscape entwickelt und war dafür gedacht um dynamischeres HTML produzieren zu können.<br>
     Obwohl es dabei Namensgleich mit Java ist, hat es dennoch nicht sehr viel damit gemeinsam und unterscheidet sich sogar grundlegend von diesem.
-<blockquote style="margin-left: 150px;">"Um die Popularität von Java zu nutzen, wurde LiveScript in JavaScript umbenannt, obwohl die beiden Sprachen voneinander unabhängig entwickelt wurden und
-    völlig unterschiedliche Grundkonzepte aufweisen."</blockquote></p>
-<p>Javascript hat dabei keinen Compiler und funktioniert über einen im Browser integrierten Interpreter.
+<blockquote id="JSMargin" class="Border">"Um die Popularität von Java zu nutzen, wurde LiveScript in JavaScript umbenannt, obwohl die beiden Sprachen voneinander unabhängig entwickelt wurden und
+    völlig unterschiedliche Grundkonzepte aufweisen."</blockquote>
+    </p>
+<p class="Border">Javascript hat dabei keinen Compiler und funktioniert über einen im Browser integrierten Interpreter.
     Den Sprachkern, der übersetzten Syntax macht dabei ECMAScript aus.<br>
     Die Funktionen von Javascript sind dabei sehr umfangreich. Es erlaubt vor allem das Ausführen von Gleichung,
     besitzt unterschiedliche Datentypen(Strings, Integers, Variablen usw) und kann z.B. auch Content von anderen Websites "fetchen".
     Dabei kann es sowohl in eine funktionale als auch objektorientierte Richtung programmiert werden.
 </p>
 
-<img alt="Compiler Java" src="https://cdn-media-1.freecodecamp.org/images/bu47j9z9Dee3O3hHm51ijuARr3aUTtj4j4EH" width="350px">
-    <p>Jit konvertiert Javascript code während während es ausgeführt wird.</p>
+<img class="Edit" alt="Compiler Java" src="https://cdn-media-1.freecodecamp.org/images/bu47j9z9Dee3O3hHm51ijuARr3aUTtj4j4EH" width="350px">
 
 
     <p>Jit konvertiert Javascript code während es ausgeführt wird.</p>
 <h2> Fingerprinting mit JS</h2>
-<p>
+<p class="Border">
     Javascript kann auch dafür genutzt werden um über den HTTP Header informationen wie Browser Einstellungen, Betriebssystem, allg. Systeminformationen und mehr abgefragt und an den Server geschickt werden. <br>
     Diese Informationen können erneut abgefragt und dazu genutzt werden um individuelle Nutzer im Internet zu deanonymisieren. Auch ohne Cookies.
 </p>
-<img alt="Fingerprinting" src="https://lcdn.gologin.com/img/canvasFp/2.webp" width="400px">
+<img class="Edit" alt="Fingerprinting" src="https://lcdn.gologin.com/img/canvasFp/2.webp" width="400px">
 </div>
-<div style="margin-left: 50px">
+<div>
 <h2> Integration in HTML und DOM</h2>
-<p>
+<p class="Border">
 Ähnlich wie CSS kann Javascript auch in HTML integriert genutzt werden. Für kleinere Anwendungen reicht es aus das &lt;script&gt; Element zu nutzen. Dazu kommen dann noch die DOM Elemente welche es leicht ermöglichen, Elemente dynamiken zu verleihen. <br>
 Es können mit "document.GetElementById()" z.B. Elemente aufgegriffen und verändert werden.
 </p>
-<div id="demo">
+<div id="Demo">
     Hover um größe zu ändern
 </div>
-    <img alt="Document root" src="https://www.w3schools.com/js/pic_htmltree.gif" width="350px">
+    <img class="Edit" alt="Document root" src="https://www.w3schools.com/js/pic_htmltree.gif" width="350px">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/DHjqpvDnNGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+<H2>Zusammenfassung</H2>
+<ul class="UnorderedList">
+    <li>Javascript produziert dynamisches HTML</li>
+    <li> Hat keinen direkten compiler aber einen interpreter</li>
+    <li>Kann für adtracking und Fingerprinting eingesetzt werden</li>
+    <li>Ist eng mit HTML und CSS verbunden, kann HTML und Style elemente manipulieren</li>
+</ul>
+
+
+<footer>
+    <ul class="Nav" id="F1">
+        <li class="ItemLeft">
+            <a href="Git.html" class="Link"> Impressum</a>
+        </li>
+        <li class="ItemRight">
+            <a href="Git.html" class="Link" > Version</a>
+        </li>
+    </ul>
+</footer>
 <script>
     document.getElementById('demo').onmouseover = function () {
         document.getElementById('demo').style.fontSize = "50px";

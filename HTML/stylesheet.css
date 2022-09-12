@@ -1,0 +1,222 @@
+.LogoTop {
+    list-style-type: none;
+    background-color: #83b224;
+    overflow: hidden;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    height: 90px;
+
+}
+
+.Nav {
+    list-style-type: none;
+    background-color: #21304d;
+    overflow: hidden;
+    padding-bottom: 0px;
+    height: 50px;
+    margin-top: 0px;
+    font-family: Vemana2000, sans-serif;
+
+}
+
+.NavBar {
+    padding-top: 12px;
+    float: left;
+
+    margin-left: 0px;
+    font-size: 20px;
+    margin-right: 40px;
+
+    display: block;
+    padding-bottom: 0px;
+}
+
+.Link {
+    color: white;
+    text-decoration: none;
+}
+
+.Link:hover {
+    color: #83b224;
+}
+
+footer {
+    background-color: #21304d;
+    padding-bottom: 0px;
+    height: 10px;
+}
+
+.ItemLeft {
+
+    padding-top: 40px;
+    float: left;
+
+    margin-left: 0px;
+    font-size: 15px;
+    padding-left: 80px;
+
+    display: block;
+    padding-bottom: 0px;
+
+
+}
+
+.Welcome {
+    font-size: 100px;
+    font-family: “Comic Sans MS”, “Comic Sans”, cursive;
+}
+
+.ItemRight {
+    float: right;
+    padding-top: 40px;
+    margin-left: 0px;
+    font-size: 15px;
+    padding-right: 180px;
+
+    display: block;
+    padding-bottom: 0px;
+
+
+}
+
+#F1 {
+    height: 100px;
+
+}
+
+#Logo {
+    float: right;
+}
+
+.Centered {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 20%;
+
+}
+
+.Right {
+    padding-left: 500px;
+    float: right;
+}
+
+.Green {
+    background-color: #83b224;
+    padding-left: 10px;
+}
+
+.Colored {
+    color: #94700d;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.UnorderedList {
+    list-style-type: square;
+    color: black;
+}
+
+.Edit {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    border-radius: 30%;
+
+}
+
+.Border {
+    border-style: solid;
+}
+
+.Background {
+    background-color: grey;
+
+}
+
+Body {
+    font-family: Vemana2000, sans-serif;
+    margin: 0px;
+}
+
+.LogoList {
+    float: left;
+    display: block;
+}
+
+.MovieList {
+    list-style-type: none;
+    overflow: hidden;
+    margin-left: 0%;
+    padding-top: 25px;
+    padding-bottom: 0px;
+}
+
+.MovieListItem {
+    display: block;
+    float: left;
+    margin-left: 27px;
+}
+
+.GhibliHeading {
+    margin-left: 50px;
+}
+
+.GhibliText {
+    margin-left: 400px;
+}
+
+.GhibliText2 {
+    width: 1000px;
+}
+
+.ClassTable {
+    padding-left: 100px;
+}
+
+.Welcome {
+    height: 800px;
+}
+
+.Grey {
+    background-color: #dddddd;
+    padding-left: 10px
+}
+
+.RowBorder {
+    border-style: solid;
+    padding: 8px
+
+}
+
+#JMargin {
+    margin-left: 150px;
+}
+
+.dropdown{
+    padding-left:10px;
+    position:relative;
+    display:inline-block;
+    margin-bottom:100px;
+    margin-left:50px;
+}
+
+.dropdownColor{
+    padding-top: 10px;
+    padding-left:10px;
+    display: none;
+    position:absolute;
+    min-width: 160px;
+    background-color:#21304d;
+}
+
+.dropdownColor div {
+    color:white;
+    display: block;
+}
+.show {display:block; padding-left:10px; padding-top:10px;}
+.hide {display:none;}
+.hiddenImg{
+    display:none;
+}
+.unhiddenImg {display:block;}
