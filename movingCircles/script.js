@@ -1,7 +1,24 @@
 'use strict'
 let x = window.innerWidth;
 let y = window.innerHeight;
+const z = 400;
+const k = 20
 document.querySelector('Body').style.backgroundColor = "cyan";
+
+//gives out a prompt which asks for num of elements that are created
+const objects = prompt('How many circles?');
+
+/**
+ * @param numPrompt makes putting in the prompt possible
+ * Applies the randomizer to the element in order to randomize all its aspects, so position at start, speed, size etc.
+ */
+
+function createElements (numPrompt){
+    const elementArray = []
+    for(let i = 0; i < numPrompt; i++) {
+        elementArray[i] = newElement(randomizer(x - z,1), randomizer(y - z,1),randomizer(z,1), randomizer(5,1));
+    }
+}
 
 /**
  * creates a new html div element, which is placed at a randome location by cssText
@@ -10,10 +27,22 @@ document.querySelector('Body').style.backgroundColor = "cyan";
  * @param size explained below
  * @param speed explained below
  */
+
+createElements(objects);
 function newElement (posX, posY, size, speed) {
     const circleHTML = document.createElement("div");
     const content = document.createTextNode('');
-    circleHTML.style.cssText = `background-color: rgb(${Math.trunc(Math.random()* 255 + 0)}, ${Math.trunc(Math.random()* 255 + 0)}, ${Math.trunc(Math.random()* 255 + 0) }); border-style: solid; border-radius: 900px; position: absolute; width: ${size}px; height:${size}px; margin-top:${posY}px; margin-left:${posX}px;`;
+    circleHTML.style.cssText =
+        `background-color: rgb(${Math.trunc(Math.random()* 255 + 0)}, 
+        ${Math.trunc(Math.random()* 255 + 0)}, 
+        ${Math.trunc(Math.random()* 255 + 0) }); 
+        border-style: solid; 
+        border-radius: 900px; 
+        position: absolute; 
+        width: ${size}px; 
+        height:${size}px; 
+        margin-top:${posY}px; 
+        margin-left:${posX}px;`;
     circleHTML.appendChild(content);
     document.querySelector("Body").appendChild(circleHTML);
     randomeMovement(circleHTML,posX,posY, size, randomizer(-5, 2))
@@ -28,6 +57,7 @@ function newElement (posX, posY, size, speed) {
  * @param size makes sure the the bounceback happens exactly as the ball reaches the edge
  * @param speed randome speed value which will be inverted as soon as the edge is reached
  */
+
 function randomeMovement (element, posX, posY, size, speed) {
     let speedX = speed;
     let speedY = speed;
@@ -51,28 +81,36 @@ function randomeMovement (element, posX, posY, size, speed) {
         let vertical = element.style.marginTop.slice(0,indexPxY);
         vertical = Number(vertical);
         if(horizontal > x-size) {
-            element.style.marginLeft = `${x-size-20}px`
+            element.style.marginLeft = `${x-size-k}px`
             posX = `${x-size}px`
             return posX;}
         if(vertical > y){
-            element.style.marginTop = `${y-size-20}px`
+            element.style.marginTop = `${y-size-k}px`
             posY = `${y-size-20}px`
             console.log(posY);
             return posY;
         }
     });
 }
-//Handles clicking and hovering
+
+/**
+ *
+ * @param element is the circle, to which hovering and clicking is applied
+ * @param size is used to increase and decrease the width of the circle upon hovering
+ * The function handles the actions of hovering and clicking the circle. The picture is applied on click with the event listener.
+ * Same goes for the resize with mouseover and mouseout.
+ */
+
 function hoverAndClickEvent(element, size){
     element.addEventListener('mouseover', function() {
-        element.style.width = `${size + 20}px`
-        element.style.height = `${size + 20}px`
-        element.style.backgroundSize = `${size + 20}px`
+        element.style.width = `${size + k}px`
+        element.style.height = `${size + k}px`
+        element.style.backgroundSize = `${size + k}px`
     })
     element.addEventListener('mouseout', function() {
-        element.style.width = `${size-20}px`
-        element.style.height = `${size-20}px`
-        element.style.backgroundSize = `${size - 20}px`
+        element.style.width = `${size-k}px`
+        element.style.height = `${size-k}px`
+        element.style.backgroundSize = `${size - k}px`
     })
     element.addEventListener('click', function() {
         element.style.backgroundImage = "url('Screenshot from 2022-09-05 11-21-29.png')"
@@ -81,13 +119,15 @@ function hoverAndClickEvent(element, size){
         element.style.backgroundSize = `${size}px`
     })
 }
-//returns a randome number that isn't 0, has positive aswell as negative values to ensure that the circles move in every direction possible
+
 /**
  *
  * @param max highest random number possible
- * @param min min random number possible
- * @returns {number}
+ * @param min smallest random number possible
+ * @returns {number} returns a randome number that isn't 0.
+ * The number is supposed to be between 1 and the max value or between -1 and a set min value.
  */
+
 function randomizer (max, min){
     let random = Math.trunc(Math.random()* max + min);
     if (random === 0){
@@ -102,12 +142,5 @@ function randomizer (max, min){
         return random;
     }
 }
-//gives out a prompt which asks for num of elements that are created
-const objects = prompt('How many circles?');
-function createElements (numPrompt){
-    let elementArray = []
-    for(let i = 0; i < numPrompt; i++) {
-        elementArray[i] = newElement(randomizer(x - 400,1), randomizer(y - 400,1),randomizer(400,1), randomizer(5,1));
-    }
-}
-createElements(objects);
+
+
