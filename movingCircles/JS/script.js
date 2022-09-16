@@ -113,7 +113,7 @@ function hoverAndClickEvent(element, size){
         element.style.backgroundSize = `${size - k}px`
     })
     element.addEventListener('click', function() {
-        element.style.backgroundImage = "url('Screenshot from 2022-09-05 11-21-29.png')"
+        element.style.backgroundImage = "url('../Screenshot from 2022-09-05 11-21-29.png')"
         element.style.backgroundPosition = "center"
         element.style.backgroundRepeat = "no-repeat"
         element.style.backgroundSize = `${size}px`
